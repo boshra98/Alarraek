@@ -16,6 +16,10 @@
 			text-align: center;
 			color: white;
 			background-color: grey;
+            background-image: url('images/header.jpg') ;
+            /*background-repeat: no-repeat;*/
+            /*max-width: 70%;*/
+
 
 		}
 		header.h1{
@@ -52,6 +56,7 @@
         	flex:30%;
         	background-color: #666;
         	padding: 20px;
+
         }
         main{
         	flex:70%;
@@ -69,6 +74,47 @@
         	text-align: center;
         	background-color: #ddd;
         }
+        input[type=text] ,select , textarea
+        {
+            width:100%;
+            padding:12px;
+            border:1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+        input[type=submit]{
+            background-color: blue;
+            color: white;
+            padding: 12px 20px ;
+            border:none;
+
+        }
+        input[type=submit] :hover{
+            background-color: lightblue;
+}
+.column
+        {
+            float: left;
+            width:50%;
+            margin-top: 6px;
+            padding: 20px;
+
+        }
+        label{
+            float:left;
+        }
+         @media screen and (max-width:400px){
+            nav a{
+                float: none;
+                width:100%;
+            }
+        }
+        @media screen and (max-width:600px){
+            .column, input[type=submit]{
+                width:100%;
+                margin-top: 0;
+            }
+        }
 	</style>
 </head>
 <body>
@@ -81,22 +127,60 @@
 	<a href="#">Home </a>
 		<a href="#">sofa </a>
 			<a href="#">fabric </a>
-				<a href="#">contect us </a>
+				<a href="#contect">contect us </a>
 
 	</nav>
 	<div class="row">
 		<aside>
 			<h2>about company</h2>
-			<h5>photo</h5>
-			<div class="test" style=" hight:200px;"> image</div>
+			<h5>sofa</h5>
+			<!-- <div class="test" style=" hight:200px;"> image</div> -->
+            <img src="images/sofa.jpg" width="300px" height="200px">
+            <p>provide all survices and product</p>
+            <br>
+            <h3>more survices</h3>
+            <p>offer:20-50%</p>
+            <img src="images/sofa5.jpg" width="300px" height="200px">
+                        <!-- <img src="images/sofa6.jpg" width="300px" height="200px"> -->
+
 		</aside>
 		<main>
-			<h2>sofa</h2>
+			<h2> fabrics</h2>
 			<h5>offers 50%</h5>
-			<div class="test" style=" hight:200px;"> image</div>
+			<!-- <div class="test" style=" hight:200px;"> image</div> -->
+            <!-- <img src="images/fabric1.jpg" width="900" height="300"> -->
+                        <img src="images/fabric2.jpg" width="900" height="300">
+                        <p>offer over 10% ...</p>
+                                    <img src="images/sofa4.jpg" width="500" height="300">
+
+
 		</main>
 	</div>
-	<footer> <h1>footer</h1></footer>
+	<footer> <h2 id="contect">contect us</h2>
+        <div class="row">
+            <div class="column"> 
+<img src="images/fabric1.jpg" width="300" height="500">
+</div>
+<div class="colum">
+                <form action="#">
+                    <label for="frame">first name</label>
+                    <input type="text" name="firstname" id="fname" placeholder="your name ">
+                     <label for="frame">last name</label>
+                    <input type="text" name="lasttname" id="lname" placeholder="your  last name ">
+                    <label for="country">country</label>
+                    <select name="country" id="country">
+                    <option value="syria">Syria</option>
+                    <option value="sudan">sudan</option>
+                    <option value="egypt">egypt</option>
+                    <option value="other">other</option>
+                </select>
+                <label for="subject">subject</label>
+                    <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Write Somethings......."></textarea>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
