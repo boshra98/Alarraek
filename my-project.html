@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AlAraaek 2021</title>
+	<style >
+		*{
+			box-sizing: border-box;
+
+		}
+		body{
+			font-family: Arial, sans-serif;
+			margin: 0;
+		}
+		header{
+			padding: 120px;
+			text-align: center;
+			color: white;
+			background-color: grey;
+
+		}
+		header.h1{
+			font-size: 40px;
+		}
+		nav{
+            overflow: hidden;
+            background-color: #333;
+            position: sticky;
+            top:0;
+        }
+        nav a {
+            float :left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover{
+        	background-color: #ddd;
+        	color: black;
+
+
+        }
+        nav a:active{
+        	background-color:#666; 
+        	color:white;
+        }
+        .row{
+        	display: flex;
+        }
+        aside{
+        	flex:30%;
+        	background-color: #666;
+        	padding: 20px;
+        }
+        main{
+        	flex:70%;
+        	background-color: white;
+        	padding: 20px;
+        }
+        .test{
+        	background-color: #aaa;
+        	text-align:center;
+        	padding: 20px;
+        	width: 100%;
+        }
+        footer{
+        	padding: 20px;
+        	text-align: center;
+        	background-color: #ddd;
+        }
+	</style>
+</head>
+<body>
+<header>
+	<h1>textile and furniture</h1>
+	<p>sofa and fabric</p>
+</header>
+<nav>
+
+	<a href="#">Home </a>
+		<a href="#">sofa </a>
+			<a href="#">fabric </a>
+				<a href="#">contect us </a>
+
+	</nav>
+	<div class="row">
+		<aside>
+			<h2>about company</h2>
+			<h5>photo</h5>
+			<div class="test" style=" hight:200px;"> image</div>
+		</aside>
+		<main>
+			<h2>sofa</h2>
+			<h5>offers 50%</h5>
+			<div class="test" style=" hight:200px;"> image</div>
+		</main>
+	</div>
+	<footer> <h1>footer</h1></footer>
+
+
+</body>
+</html>
